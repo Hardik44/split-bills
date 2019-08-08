@@ -1,0 +1,8 @@
+{
+  "postgres_url": "postgres://postgres:root@localhost:5432/expense_manages",
+  "app_secret_key": "ashdfaslf",
+  "token_key": "ashdfaslf",
+  "admin_name": "postgres",
+  "admin_email": "parth@shipmnts.com",
+  "admin_password": "root"
+}
