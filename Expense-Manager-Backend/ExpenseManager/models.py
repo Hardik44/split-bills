@@ -123,14 +123,14 @@ class ExpenseGroup(db.Model):
     __tablename__ = 'expense_group'
     id = db.Column(db.Integer, primary_key = True)
     name = db.Column(db.String(30), nullable = False, unique=True)
-    group_expense = db.Column(db.Float, nullable = False, default = 0)
+    # group_expense = db.Column(db.Float, nullable = False, default = 0)
 
 class ExpenseGroupToUsers(db.Model):
     __tablename__ = 'expense_group_to_users'
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
     expense_group_id = db.Column(db.Integer, db.ForeignKey('expense_group.id'))
-    group_share = db.Column(db.Float, nullable = False, default = 0)
+    # group_share = db.Column(db.Float, nullable = False, default = 0)
 
 
 db.create_all()

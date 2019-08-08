@@ -158,15 +158,15 @@ def remove_friend_from_group():
         print(e)
         return jsonify(message='unable to delete resource'), 500
 
-@app.route(pre + '/add_group_expense', methods=['POST'])
-@auth_user('user')
-def add_group_expense():
-    try:
-        if request.is_json and request.data:
-            res = add_expense_to_group(g.user, request.get_json())
-            return jsonify(message='successfully added new resource', group_resource=res), 201
-        else:
-            return jsonify(message='request is not in json format or body is empty'), 400
-    except Exception as e:
-        print(e)
-        return jsonify(message='unable to add new resource'), 500
+# @app.route(pre + '/add_group_expense', methods=['POST'])
+# @auth_user('user')
+# def add_group_expense():
+#     try:
+#         if request.is_json and request.data:
+#             res = add_expense_to_group(g.user, request.get_json())
+#             return jsonify(message='successfully added new resource', group_resource=res), 201
+#         else:
+#             return jsonify(message='request is not in json format or body is empty'), 400
+#     except Exception as e:
+#         print(e)
+#         return jsonify(message='unable to add new resource'), 500
