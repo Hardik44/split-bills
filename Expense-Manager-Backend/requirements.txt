@@ -21,7 +21,7 @@ pylint==1.7.2
 singledispatch==3.4.0.3
 six==1.10.0
 SQLAlchemy==1.1.14
-Werkzeug==0.12.2
+Werkzeug==0.15.3
 wrapt==1.10.11
 WTForms==2.1
 WTForms-JSON==0.3.3
